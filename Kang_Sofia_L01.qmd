@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Sofia Kang"
+pagetitle: "L01 Sofia Kang"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[My L01 GitHub Repo](https://github.com/stat301-3-2026-spring/l01-review-sofiak1234)
 :::
 
 ## Overview
@@ -37,8 +35,6 @@ The goal of this lab is to review machine learning/predictive modeling vocabular
 
 ## Questions
 
-When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
-
 ### Question 1
 
 Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
@@ -46,7 +42,15 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+* Identify question and collect data, select metric
+* Split into training and testing
+* Use v-fold cross validation or other resampling methods on training data
+* Build models and recipes
+* Tune hyperparameters
+* Assess models with folds
+* Choose best model based on metric
+* Use testing data on best model
+* Evaluate using RMSE or other metrics.
 
 :::
 
@@ -57,7 +61,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning requires an outcome, while unsupervised learning finds patterns in the data and groups them together, without an outcome.
 
 :::
 
@@ -70,7 +74,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We want to see if there are trends in the data.
 
 :::
 
@@ -79,7 +83,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We're testing whether a predictor is important for determining the outcome.
 
 :::
 
@@ -88,7 +92,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Given new data, we want to determine the outcome variable.
 
 :::
 
@@ -103,7 +107,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models follow a standard equation, and we want to find the coefficients that makes the model more accurate.
 
 :::
 
@@ -114,7 +118,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+These models don't have standard equations, but instead the model recognizes patterns and groups data points by similarity.
 
 :::
 
@@ -125,7 +129,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are parametric models, and empirically driven models are nonparametric models.
 
 :::
 
@@ -136,7 +140,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are easier to interpret because they are based off of an equation that we can understand, and we can relate predictors to the outcome variable.
 
 :::
 
@@ -147,7 +151,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are more flexible, as they aren't restricted to a certain type of equation, like a linear model is.
 
 :::
 
@@ -158,7 +162,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It is easier for empirically driven models to have less variance and higher bias, as they can overfit the data if they find too small patterns. Mechanistic models may have higher variance and lower bias. Low variance may indicate high bias, due to overfitting.
 
 :::
 
@@ -169,7 +173,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Regression focuses on finding a number for the outcome variable, while a classification problem groups the outcome variable into categories.
 
 :::
 
@@ -180,7 +184,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We want to ensure that the training and testing data have observations from all ranges of the outcome variable, and smaller groups won't be under-represented.
 
 :::
 
@@ -191,7 +195,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We use v-fold cross validation with repeats to reduce variance of the RMSE to get a better estimate, which prevents the risk that the model we used on the training set we chose just happens to be a good fit. This can also prevent overfitting. We split the training data set into different folds, and use each fold as an assessment set while the other folds are a training set. The different RMSE will be averaged to find the average RMSE for each model.
 
 :::
 
@@ -202,7 +206,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bootstrap sampling is used to look at how stable the model is, and is also used to create confidence intervals. V-fold cross validation is usually used to prevent overfitting.
 
 :::
 
@@ -213,7 +217,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We tune hyperparameter values to see if models perform better besides the default values. Different data sets have different number of predictors and observations, which can make the default values bad or not as good.
 
 :::
 
@@ -224,7 +228,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+RMSE (root mean square error), MAE (mean absolute error)
 
 :::
 
@@ -233,7 +237,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Accuracy, ROC-AUC
 
 :::
 
@@ -248,7 +252,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential. We want to see if a specific variable, the number of service calls, affect the outcome variable, if the customer continues with the company.
 
 :::
 
@@ -257,7 +261,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive. We want to see that given a customer's behavior, will they leave or stay with the company.
 
 :::
 
