@@ -46,7 +46,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 * Assess models with folds
 * Choose best model based on metric
 * Use testing data on best model
-* Evaluate using RMSE or other metrics.
+* Evaluate using RMSE/Accuracy or other metrics based on classification or regression.
 
 :::
 
