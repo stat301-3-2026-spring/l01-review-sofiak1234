@@ -1,0 +1,455 @@
+---
+title: "Self Evaluation L01 Review"
+subtitle: |
+  | Data Science 2 with R 
+  | STAT 301-2
+author: "Sofia Kang"
+pagetitle: "Self Evaluation PQ2 Sofia Kang"
+date: today
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    embed-resources: true
+    code-fold: false
+    link-external-newwindow: true
+
+execute:
+  warning: false
+  error: true
+
+from: markdown+emoji
+reference-location: margin
+citation-location: margin 
+---
+
+::: {.callout-tip icon="false"}
+## Github Repo Link
+
+[My L01 GitHub Repo](https://github.com/stat301-3-2026-spring/l01-review-sofiak1234)
+:::
+
+## Questions
+
+### Question 1
+
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+-   Identify question and collect data, select metric
+-   Split into training and testing
+-   Use v-fold cross validation or other resampling methods on training data
+-   Build models and recipes
+-   Tune hyperparameters
+-   Assess models with folds
+-   Choose best model based on metric
+-   Use testing data on best model
+-   Evaluate using RMSE/Accuracy or other metrics based on classification or regression.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+My answer is very similar to the solutions, and it has all the key components.
+:::
+
+### Question 2
+
+Explain the difference between supervised and unsupervised learning.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Supervised learning requires an outcome, while unsupervised learning finds patterns in the data and groups them together, without an outcome.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 4
+
+### Explanation
+
+I think I got the main gist of the solution, but I could have expanded more on how supervised learning is used for prediction, while unsupervised learning is used for finding patterns and relationships.
+:::
+
+### Question 3
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+#### Descriptive Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We want to see if there are trends in the data, like making scatterplots.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified looking at trends of data
+:::
+
+#### Inferential Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We're testing whether a predictor is important for determining the outcome, like seeing if x is important for determining y.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified how inferential models are used for testing relationship between variables.
+:::
+
+#### Predictive Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Given new data, we want to determine the outcome variable, like for a set of x, what is the predicted y.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified that models predict on new data
+:::
+
+### Question 4
+
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven.
+
+#### Part (a)
+
+What does it mean to be a mechanistic model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic models follow a standard equation, and we want to find the coefficients that makes the model more accurate.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+I explained how mechanistic models follow a standard equation, and we want to find the coefficients/parameters.
+:::
+
+#### Part (b)
+
+What does it mean to be an empirically driven model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+These models don't have standard equations, but instead the model recognizes patterns and groups data points by similarity.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+I explained how these models don't have a standard equation, but look at relationships and patterns in the data.
+:::
+
+#### Part (c)
+
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic models are parametric models, and empirically driven models are nonparametric models.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly explained mechanistic are parametric and empirically driven are nonparametric.
+:::
+
+#### Part (d)
+
+In general, is a mechanistic or empirically driven model easier to interpret? Explain.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic models are easier to interpret because they are based off of an equation that we can understand, and we can relate predictors to the outcome variable.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+I correctly explained how because mechanistic models follow a known equation, it is easier to understand.
+:::
+
+#### Part (e)
+
+How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Empirically driven models are more flexible, as they aren't restricted to a certain type of equation, like a linear model is.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified empirically driven models as more flexible, due to no restriction of equation.
+:::
+
+#### Part (f)
+
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+It is easier for empirically driven models to have less variance and higher bias, as they can overfit the data if they find too small patterns. Mechanistic models may have higher variance and lower bias.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 1
+
+### Explanation
+
+I understood less variance means higher bias, and vice versa. However, I didn't understand how mechanistic models and empirical models behave on a data set.
+
+## Updated solution
+
+Mechanistic models have lower variance because the models are defined by an equation. However, they have higher bias because we have to make initial assumptions on the type of data.
+
+Empirically driven models have higher variance because they fit based on the specific data set. This causes lower bias as the models can fit very specifically to the data.
+:::
+
+### Question 5
+
+Explain the difference between a regression and classification machine learning (ML) problems.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Regression focuses on finding a number for the outcome variable, while a classification problem groups the outcome variable into categories.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified regression results in a numeric/number outcome variable, while classification has groups/categorical outcome variable.
+:::
+
+### Question 6
+
+When splitting the data, why is it useful to stratify by the outcome/target variable?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We want to ensure that the training and testing data have observations from all ranges of the outcome variable, and smaller groups won't be under-represented.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 4
+
+### Explanation
+
+I explained how we need to stratify to get good distribution in both training and testing data, but I could have elaborated more on how this could lead to over/underfitting models.
+:::
+
+### Question 7
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We use v-fold cross validation with repeats to reduce variance of the RMSE to get a better estimate, which prevents the risk that the model we used on the training set we chose just happens to be a good fit. This can also prevent overfitting. We split the training data set into different folds, and use each fold as an assessment set while the other folds are a training set. The RMSE values will be averaged to find the average RMSE for each model.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+I hit all the main points, like how v-fold cross validation works, and how this reduces variance.
+:::
+
+### Question 8
+
+When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Bootstrap sampling is used to look at how stable the model is, and is also used to create confidence intervals. V-fold cross validation is usually used to prevent overfitting.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 2
+
+### Explanation
+
+I think I was looking at different scenarios that would prefer bootstrap resampling vs v-fold cross validation.
+
+## Updated solution
+
+Bootstrap sampling is used to make the test RMSE have low variance, as we can have more bootstrap samples than folds. If the data set is too small, there won't be enough data for each fold, so bootstrap sampling should be used instead.
+:::
+
+### Question 9
+
+Briefly describe model tuning and why we use it.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We tune hyperparameter values to see if models perform better besides the default values. Different data sets have different number of predictors and observations, which can make the default values bad or not as good.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 4
+
+### Explanation
+
+I could have explained how changing hyperparameters makes a new model, which can't be optimized with just the data.
+:::
+
+### Question 10
+
+What are two common performance metrics when dealing with a regression ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+RMSE (root mean square error), MAE (mean absolute error)
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified RMSE and MAE
+:::
+
+What are two common performance metrics when dealing with a classification ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Accuracy, ROC-AUC
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified Accuracy and ROC-AUC
+:::
+
+### Question 11
+
+Classify each question/problem below as either prediction or inferential. Explain your reasoning for each.
+
+A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with a them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
+
+1.  Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Inferential. We want to see if a specific variable, the number of service calls, affect the outcome variable, if the customer continues with the company.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified inferential, and explained how we are trying to see if a specific variable affects the outcome.
+:::
+
+2.  How likely is it that a customer will churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Predictive. We want to see that given a customer's behavior, will they leave or stay with the company.
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+## Score: 5
+
+### Explanation
+
+Correctly identified predictive and explained how we want to find the outcome variable (staying or leaving).
+:::
