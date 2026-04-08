@@ -221,7 +221,7 @@ Mechanistic models are easier to interpret because they are based off of an equa
 
 ### Explanation
 
-I correctly explained how because mechanistic models follow a known equation, it is easier to understand.
+Correctly explained how because mechanistic models follow a known equation, it is easier to understand.
 :::
 
 #### Part (e)
@@ -327,7 +327,7 @@ We use v-fold cross validation with repeats to reduce variance of the RMSE to ge
 
 ### Explanation
 
-I hit all the main points, like how v-fold cross validation works, and how this reduces variance.
+I hit all the main points, like how v-fold cross validation works and how this reduces variance.
 :::
 
 ### Question 8
